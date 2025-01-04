@@ -77,9 +77,12 @@ h4, p {
   line-height: 0;
   border-radius:0 0 4px 4px;
 }
+ *p {
+  font-size: 100%;
+}
 
 .container .why-us p {
-  font-size: .9rem;
+  font-size: 100%;
   line-height: .15;
   color: #ffffffb4;
 }
