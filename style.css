@@ -57,7 +57,7 @@ h2, p {
   background: white;
   border-radius: 5px;
   box-shadow: 1.6px 1.6px 14.5px 3.2px #96949440;
-  /* display: grid; */
+  display: grid;
   /* grid-template-columns: 1fr; */
 
 }
