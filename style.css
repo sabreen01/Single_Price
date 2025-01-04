@@ -22,7 +22,9 @@ body {
   height: 100vh;
   padding: 5rem 2rem;
 }
-
+div{
+  overflow: hidden;
+}
 h4, p {
   margin: 1rem 0;
 }
