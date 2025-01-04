@@ -8,6 +8,7 @@
   --grayish-blue: hsl(218, 22%, 67%);
 }
 
+/* Resets */
 * {
   margin: 0;
   padding: 0;
@@ -19,21 +20,19 @@ body {
   font-family: 'Karla', sans-serif;
   background: var(--light-gray);
   height: 100vh;
-  padding: 80px 32px;
-  max-width: 700px;
-  margin: 0 auto;
+  padding: 5rem 2rem;
 }
 
-h2, p {
-  margin: 16px 0;
+h4, p {
+  margin: 1rem 0;
 }
 
-.primary { color: var(--cyan); }
-.secondary { color: var(--bright-yellow); }
-.gray { color: var(--grayish-blue); }
-.off-white { color: #ffffffb4; }
-.large-text { font-size: 24px; }
-.small-text { font-size: 14.5px; }
+.primary {color: var(--cyan); }
+.secondary {color: var(--bright-yellow);}
+.gray {color: var(--grayish-blue);}
+.off-white{color: rgba(255, 255, 255, 0.705);}
+.large-text{font-size: 1.5rem;}
+.small-text{font-size: .9rem;}
 
 .btn {
   display: block;
@@ -42,10 +41,10 @@ h2, p {
   font-weight: 600;
   width: 100%;
   background: var(--bright-yellow);
-  padding: 8px 20px;
+  padding: .5rem 1.25rem; 
   text-decoration: none;
   border-radius: 8px;
-  box-shadow: 1.6px 1.6px 14.5px 3.2px #5c5a5a40;
+  box-shadow: .1rem .1rem .9rem .2rem  #5c5a5a40;
 }
 
 .btn:hover {
@@ -53,58 +52,63 @@ h2, p {
   color: var(--cyan);
 }
 
+
 .container {
   background: white;
-  border-radius: 5px;
-  box-shadow: 1.6px 1.6px 14.5px 3.2px #96949440;
-  display: grid;
-  /* grid-template-columns: 1fr; */
-
+  border-radius: 4px;
+  box-shadow: .1rem .1rem .9rem .2rem  #96949440;
 }
 
-#main-header, #price, .why-us {
-  padding: 2.5px 16px;
+.container #main-header {
+  padding: .15rem 1rem;
 }
-
-#price {
+.container #price {
   background: var(--cyan);
+  padding: .15rem 1rem 1.5rem 1rem;
   color: #fff;
-  border-radius:0;
-  padding-bottom: 24px;
+  border-radius: 0;
 }
-
-.why-us {
+.container .why-us {
   background: var(--off-cyan);
+  padding: .15rem 1rem .5rem 1rem;
   color: #fff;
   line-height: 0;
-  border-radius:0 0 4px  4px;
-  padding-bottom: 8px;
+  border-radius:0 0 4px 4px;
 }
 
-.why-us p {
-  font-size: 14.5px;
-  line-height: 2.5px;
+.container .why-us p {
+  font-size: .9rem;
+  line-height: .15;
   color: #ffffffb4;
 }
 
 @media screen and (min-width: 594px) {
+
+  body {
+    max-width: 700px;
+    margin: 0 auto;
+  }
   .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 250px;
   }
 
-  #main-header {
-    display: grid;
-    grid-column: 1 / span 3;
-    padding: 16px 32px;
+  .container #main-header {
+    grid-column: 1 /span 3;
+    padding: 1rem 2rem;
     justify-content: center;
   }
 
-  #price, .why-us {
-    padding: 12px 32px;
+  .container #price {
+    padding: .75rem 2rem;
   }
 
-  .why-us p {
-    line-height: 6.5px;
+  .container .why-us {
+    padding: .75rem 2rem;
+  }
+
+  .container .why-us p {
+    line-height: .4;
   }
 }
